@@ -36,6 +36,9 @@ body {
     background-color: #1ac344;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* header */
 
@@ -100,10 +103,6 @@ body {
     align-items: center;
 }
 
-.nav__logo {
-
-}
-
 .nav__list {
     display: flex;
     column-gap: 80px;
@@ -137,10 +136,6 @@ body {
 
 
 /* logo */
-
-a {
-    text-decoration: none;
-}
 
 .logo {
    font-size: 20px;
@@ -224,4 +219,124 @@ a {
 .header__btn:active {
     position: relative;
     top: 1px;
+}
+
+
+
+/* destinations */
+
+.destinations {
+    padding: 96px 0 100px;
+    overflow-x: hidden;
+}
+
+.destinations__row {
+    display: flex;
+    column-gap: 50px;
+}
+
+.destinations__content {
+    max-width: 456px;
+}
+
+.block {
+
+}
+
+.destinations__slider {
+    width: 1110px;
+    flex-shrink: 0;
+
+}
+
+.destinations__title {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: normal;
+}
+
+.destinations__title span {
+    font-size: 30px;
+    line-height: normal;
+}
+
+.destinations__text {
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--secondary);
+    line-height: normal;
+}
+
+.common__btn {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: white;
+    padding: 25px 45px;
+    display: inline-block;
+    border-radius: 27px;
+    background: linear-gradient(172deg, #FF7B4E 0%, #FF584E 100%);
+
+}
+
+.common__btn:hover {
+    opacity: 0.7;
+    transition: 0.2s ease-in;
+}
+
+.common__btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* slider */
+
+.slider {
+    position: relative;
+}
+
+.slider__item {
+    width: 335px;
+    height: 402px;
+    margin-top: 27px;
+    object-fit: cover;
+    border-radius: 35px;
+    transition: 0.2s ease-in;
+}
+
+.slider .center .slider__item {
+    /* width: 380px; */
+    height: 456px;
+    margin-top: 0;
+}
+
+.slider__btn {
+    display: block;
+    width: 68px;
+    height: 68px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(172deg, #FF7B4E 0%, #FF584E 100%), #8B8B8B;
+}
+
+.slider__btn--prev {
+    padding-left: 26px;
+    justify-content: flex-start;
+    left: -27px;  
+}
+
+.slider__btn--next {    
+    padding-right: 26px;
+    justify-content: flex-end;    
+    right: -27px;   
 }
