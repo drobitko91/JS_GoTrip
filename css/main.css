@@ -296,6 +296,7 @@ a {
 
 .slider {
     position: relative;
+    height: 456px;
 }
 
 .slider__item {
