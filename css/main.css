@@ -45,7 +45,9 @@ body {
     min-height: 940px;
     background: linear-gradient(154deg, #428E5F 0%, #112120 100%), #204434;
     color: white;
+    overflow: hidden;
 }
+
 .header a {
     color: white;
 }
@@ -66,9 +68,27 @@ body {
     margin-bottom: 86px;
 }
 
+.header__row {
+    display: flex;    
+}
+
 .header__content {
     max-width: 592px;
+    position: relative;
+    z-index: 1;
+}
 
+.header__img {
+    position: relative;
+    flex-grow: 1;
+}
+
+.header__img img {
+    position: absolute;
+    top: -157px;
+    right: -87px;
+    width: 894px;
+    height: 940px;
 }
 
 /* nav */
@@ -150,6 +170,58 @@ a {
 }
 
 .btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* header__content */
+
+.header__content a {
+ text-decoration: none;
+}
+
+.header__badge {
+    margin-bottom: 7px; 
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.header__title {
+    margin-bottom: 30px;
+    font-size: 55px;
+    line-height: normal;
+}
+
+.header__text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    font-weight: 700;    
+    color: rgb(255, 255, 255, 0.5);
+    /* opacity: 0.5; */
+}
+
+.header__btn {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 27px 48px;
+    display: inline-block;
+    border-radius: 27px;
+    background: linear-gradient(172deg, #FF7B4E 0%, #FF584E 100%);
+
+}
+
+.header__btn:hover {
+    opacity: 0.7;
+    transition: 0.2s ease-in;
+}
+
+.header__btn:active {
     position: relative;
     top: 1px;
 }
