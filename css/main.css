@@ -341,3 +341,86 @@ a {
     justify-content: flex-end;    
     right: -27px;   
 }
+
+
+/* customers */
+
+.customers {
+    padding: 100px 0 133px;
+}
+
+.customers__row {
+    display: flex;
+    column-gap: 68px;
+}
+
+.customers__img {
+    min-width: 478px;   
+}
+
+.customers__img img {
+    border-radius: 60px; 
+}
+
+.customers__content {
+
+}
+
+.customers__title {
+    width: 565px;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+
+/* review */
+
+.review {
+    max-width: 490px;
+}
+
+.review__client {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+}
+
+.review__client-avatar {
+    width: 134px;
+    height: 134px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #FF794E;
+}
+
+.review__client-desc {
+
+}
+
+.review__clients-desc-name {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.review__clients-desc-country {
+    font-size: 25px;
+    color: var(--secondary);
+    line-height: normal;
+}
+
+.review__text {
+    margin-bottom: 30px;
+    color: var(--secondary);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.review__reting {
+
+}
